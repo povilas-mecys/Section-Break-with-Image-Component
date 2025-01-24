@@ -19,7 +19,7 @@
   background: gray;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150%;
   margin-block-end: clamp(-112px, -9vw, -72px);
   max-height: 685px;
   overflow: hidden;
@@ -29,6 +29,11 @@
   z-index: 0;
   aspect-ratio: 3/2;
   background-image: url("https://dcloud.brown.edu/sites/default/files/styles/wide_lrg/public/2025-01/20190526_COMM_procession057.jpg");
+}
+@media screen and (min-width:500px) {
+  .section-break-image .component_figure {
+    background-size: 110%;
+  }
 }
 .section-break-image .component_figure img {
   aspect-ratio: inherit;
@@ -83,7 +88,7 @@
   background: gray;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150%;
   margin-block-end: clamp(-112px, -9vw, -72px);
   max-height: 685px;
   overflow: hidden;
@@ -93,6 +98,11 @@
   z-index: 0;
   aspect-ratio: 3/1;
   background-image: url("https://dcloud.brown.edu/sites/default/files/styles/wide_lrg/public/2025-01/20190526_COMM_procession057.jpg");
+}
+@media screen and (min-width:500px) {
+  .section-break-image-only .component_figure {
+    background-size: 110%;
+  }
 }
 .section-break-image-only .component_figure img {
   aspect-ratio: inherit;

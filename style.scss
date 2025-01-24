@@ -7,7 +7,7 @@
     background: gray;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 150%;
     margin-block-end: clamp(-112px, -9vw, -72px);
     max-height: 685px;
     overflow: hidden;
@@ -15,6 +15,9 @@
     transition: background-size 0.1s ease-out;
     width: 100%;
     z-index: 0;
+    @media #{$min_sm} {
+        background-size: 110%;
+    }
 
     img {
         aspect-ratio: inherit;

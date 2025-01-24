@@ -17,7 +17,7 @@
 }
 .section-break-image .component_figure {
   background: gray;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: 150%;
   margin-block-end: clamp(-112px, -9vw, -72px);
@@ -86,7 +86,7 @@
 }
 .section-break-image-only .component_figure {
   background: gray;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: 150%;
   margin-block-end: clamp(-112px, -9vw, -72px);

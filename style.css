@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Mixins
+============================================================================= */
+/* Not to be used with a form container */
+/* Use -webkit-overflow-scrolling: auto instead */
+/* ==========================================================================
+   Variables
+============================================================================= */
+/* Mixin: Component Figure */
+/* Section Break Image */
+.section-break-image {
+  /* Component Figure */
+  /* Component Body */
+  /* Component Title */
+  /* Component Caption */
+  /* Section Break Image Only */
+}
+.section-break-image .component_figure {
+  background: gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-block-end: clamp(-112px, -9vw, -72px);
+  max-height: 685px;
+  overflow: hidden;
+  position: relative;
+  transition: background-size 0.1s ease-out;
+  width: 100%;
+  z-index: 0;
+  aspect-ratio: 3/2;
+  background-image: url("https://dcloud.brown.edu/sites/default/files/styles/wide_lrg/public/2025-01/20190526_COMM_procession057.jpg");
+}
+.section-break-image .component_figure img {
+  aspect-ratio: inherit;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  visibility: hidden;
+  width: 100%;
+}
+@media screen and (min-width:500px) {
+  .section-break-image .component_figure {
+    aspect-ratio: 2/1;
+  }
+}
+.section-break-image .component_body {
+  background-color: #FFF;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4%, 3vw, 32px);
+  margin-inline: auto;
+  max-width: 1096px;
+  padding: clamp(4%, 5vw, 80px);
+  width: clamp(80%, 1096px, 90%);
+}
+.section-break-image .component_title {
+  font-family: minion-pro, serif;
+  font-weight: 700;
+  color: #C00404;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1;
+  text-align: center;
+  text-wrap: balance;
+  word-wrap: break-word;
+}
+.section-break-image .component_title:after {
+  background-color: #F0F2F3;
+  content: "";
+  display: block;
+  height: 4px;
+  margin: clamp(4%, 5vw, 32px) auto 0;
+  width: 80px;
+}
+.section-break-image .component_caption {
+  color: #434343;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.8;
+}
+.section-break-image-only .component_figure {
+  background: gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-block-end: clamp(-112px, -9vw, -72px);
+  max-height: 685px;
+  overflow: hidden;
+  position: relative;
+  transition: background-size 0.1s ease-out;
+  width: 100%;
+  z-index: 0;
+  aspect-ratio: 3/1;
+  background-image: url("https://dcloud.brown.edu/sites/default/files/styles/wide_lrg/public/2025-01/20190526_COMM_procession057.jpg");
+}
+.section-break-image-only .component_figure img {
+  aspect-ratio: inherit;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  visibility: hidden;
+  width: 100%;
+}
+@media screen and (min-width:500px) {
+  .section-break-image-only .component_figure {
+    aspect-ratio: 3/1;
+  }
+}
+.section-break-image-only .component_body {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

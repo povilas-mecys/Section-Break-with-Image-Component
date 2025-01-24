@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Page Title -->
+  <title>Section Break With Image</title>
+
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://dcloud.brown.edu/sites/default/files/css/css_xoGCuvGyvnA5pg6yPzwqGeFhICl0CHjhwTscg6steLs.css?delta=1&language=en&theme=brown_site&include=eJx9UO1uAyEMeyEGj4QCl3Fp-VIS2vXtR0-l7TSpv7CDjR1ABNVTPWHUxi6K2BD8aZTuOyT0UOPe2O8IG9UkBv7rBZm-PyqUCmaq6EVvGcXEVhV_dEB2G48O2b4mX1N4FiM3USwugKAJ3K7VpdwCZJNoQqr-uFkEYsSqTxrzLEHRa2s5AJsODImh77LyXhM7ah8hk-y4mYfBLeOYuy3LHVuaRWc5UqTSuV3QvWG7bB_3WyLYyqz6YMcpK_eIMTI_XuPQ9cbif51PjzLiL8HFtkA">
+  <link rel="stylesheet" href="https://www.brown.edu/themes/custom/brown/static/css/fonts.css">
+  <link rel="stylesheet" href="https://use.typekit.net/lok3dnd.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Article: Section Break with Image -->
+  <article class="component_item section-break-image in-view component">
+    <!-- Figure Component -->
+    <figure class="component_figure" role="img" aria-label="Background image of a procession">
+      <img
+        alt="Background image of a procession"
+        src="https://dcloud.brown.edu/sites/default/files/styles/wide_lrg/public/2025-01/20190526_COMM_procession057.jpg"
+      >
+    </figure>
+
+    <!-- Body Section -->
+    <section class="component_body">
+      <h2 class="component_title">Section Break With Image</h2>
+      <p class="component_caption">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+  </article>
+
+  <!-- Article: Another Section Break with Image and No Caption -->
+  <article class="component_item section-break-image in-view component">
+    <figure class="component_figure" role="img" aria-label="Background image of a procession">
+      <img
+        alt="Background image of a procession"
+        src="https://dcloud.brown.edu/sites/default/files/styles/wide_lrg/public/2025-01/20190526_COMM_procession057.jpg"
+      >
+    </figure>
+
+    <section class="component_body">
+      <h2 class="component_title">Section Break With Image</h2>
+      <p class="component_caption"></p>
+    </section>
+  </article>
+
+  <!-- Article: Section Break Image Only -->
+  <article class="component_item section-break-image-only in-view component">
+    <figure class="component_figure" role="img" aria-label="Background image of a procession">
+      <img
+        alt="Background image of a procession"
+        src="https://dcloud.brown.edu/sites/default/files/styles/wide_lrg/public/2025-01/20190526_COMM_procession057.jpg"
+      >
+    </figure>
+
+    <!-- Empty Body Section -->
+    <section class="component_body">
+      <h2 class="component_title"></h2>
+      <p class="component_caption"></p>
+    </section>
+  </article>
+
+  <!-- JavaScript for Parallax Effect -->
+  <script>
+    const parallaxElements = document.querySelectorAll('.component_figure');
+
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY;
+
+      parallaxElements.forEach(parallax => {
+        // Adjust background position for parallax effect
+        parallax.style.backgroundPositionY = `${scrollPosition * -0.1}% center`;
+
+        // Adjust zoom factor for background size
+        const zoomFactor = 110 + scrollPosition * 0.025;
+        parallax.style.backgroundSize = `${zoomFactor}%`;
+      });
+    });
+  </script>
+</body>
+
+</html>

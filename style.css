@@ -6,15 +6,6 @@
 /* ==========================================================================
    Variables
 ============================================================================= */
-/* Mixin: Component Figure */
-/* Section Break Image */
-.section-break-image {
-  /* Component Figure */
-  /* Component Body */
-  /* Component Title */
-  /* Component Caption */
-  /* Section Break Image Only */
-}
 .section-break-image .component_figure {
   background: gray;
   background-position: top center;
@@ -27,7 +18,7 @@
   transition: background-size 0.1s ease-out;
   width: 100%;
   z-index: 0;
-  aspect-ratio: 3/2;
+  aspect-ratio: 1.5;
   background-image: url("https://dcloud.brown.edu/sites/default/files/styles/wide_lrg/public/2025-01/20190526_COMM_procession057.jpg");
 }
 @media screen and (min-width:500px) {
@@ -96,7 +87,7 @@
   transition: background-size 0.1s ease-out;
   width: 100%;
   z-index: 0;
-  aspect-ratio: 3/1;
+  aspect-ratio: 3;
   background-image: url("https://dcloud.brown.edu/sites/default/files/styles/wide_lrg/public/2025-01/20190526_COMM_procession057.jpg");
 }
 @media screen and (min-width:500px) {
